@@ -1,24 +1,22 @@
-# README
+# 楽天お買い物Bot
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## 概要
 
-Things you may want to cover:
+### QRcode
+<img src="https://user-images.githubusercontent.com/38125792/115953781-65324400-a528-11eb-9d21-e1b5b4fda547.png" width=20% >
 
-* Ruby version
+### 目的
+- LINEbotの開発
+- 楽天APIの利用
+- HEROKUでデプロイ
 
-* System dependencies
+### 内容
+- LINEからテキストメッセージを取得
+- 入力値で楽天APIを用いて商品検索を行い、先頭の商品のジャンルを取得
+- 再び楽天APIを使い、取得したジャンル内で、入力値で検索
+- 取得した「商品概要」・「画像URL」・「価格」・「商品のリンク」を、表示
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### 環境
+- MacOS BigSur 11.2.3
+- Ruby 2.5.7
+- Ruby on Rails 5.2.4
